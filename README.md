@@ -5,6 +5,7 @@ Two approaches are packaged as an installable library with consistent CLIs:
 
 1) **Unsupervised SCD (embedding jumps + post-processing)** — `unsup_scd_improved.py`
 2) **Graph-based SCD with positional encodings (self-learning)** — `SCD-pos-Graph.py`
+3) **Multimodal SCD (audio + optional transcripts)** — `scd_multimodal_cli.py`
 
 The original scripts are preserved intact under `scdtoolkit/algorithms/`. Command-line wrappers expose common options and forward extra arguments when the originals support them.
 
@@ -15,9 +16,6 @@ The original scripts are preserved intact under `scdtoolkit/algorithms/`. Comman
 - Single repository instead of scattered notebooks/scripts.
 - Original files remain unchanged for reproducibility.
 - Ready-to-run training/evaluation commands.
-- No grid search in the multimodal/graph setup here:
-  - `Freezes = [False]`
-  - `Modes = ['audio']`
 
 ---
 
