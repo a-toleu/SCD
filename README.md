@@ -119,7 +119,7 @@ scd-toolkit/
 │  ├─ algorithms/
 │  │  ├─ unsup_scd_improved.py
 │  │  ├─ SCD-pos-Graph.py
-│  │  └─   multimodal.py
+│  │  └─ multimodal.py
 │  ├─ io/
 │  │  ├─ audio.py
 │  │  └─ rttm.py
