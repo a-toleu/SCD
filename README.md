@@ -118,7 +118,8 @@ scd-toolkit/
 ├─ scdtoolkit/
 │  ├─ algorithms/
 │  │  ├─ unsup_scd_improved.py
-│  │  └─ SCD-pos-Graph.py
+│  │  ├─ SCD-pos-Graph.py
+│  │  └─   multimodal.py
 │  ├─ io/
 │  │  ├─ audio.py
 │  │  └─ rttm.py
@@ -126,7 +127,8 @@ scd-toolkit/
 │     └─ logging.py
 ├─ scripts/
 │  ├─ scd_unsup_cli.py
-│  └─ scd_graph_cli.py
+│  ├─ scd_graph_cli.py
+│  └─ scd_multimodal_cli.py
 ├─ tests/
 │  └─ smoke_test.py
 ├─ requirements.txt
