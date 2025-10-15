@@ -68,29 +68,31 @@ scd-graph --audio /path/to/audio_or_dir --out outputs/graph --sr 16000   --block
 Constraints in this repository:
 - Only `--mode audio` is supported.
 - Only `--freeze false` is supported.
+---
 
 ### Multi-modal SCD
-# Audio-only
+#### Audio-only
 ```bash
 scd-multimodal --audio /path/to/audio_or_dir --out outputs/mm \
   --win 1.0 --hop 0.25 --feature mfcc \
   --peak-quantile 0.8 --min-distance 0.5 --save-rttm
-
-# Audio + CTM transcripts
+```
+#### Audio + CTM transcripts
+```bash
 scd-multimodal --audio /path/to/audio_or_dir --out outputs/mm \
   --transcript /path/to/*.ctm --transcript-format ctm \
   --win 1.0 --hop 0.25 --feature mfcc --alpha 0.6 \
   --peak-quantile 0.8 --min-distance 0.5 --save-rttm
-
-# Audio + JSON word timings (each item: {"start": s, "end": e, "word": "..."})
+```
+#### Audio + JSON word timings (each item: {"start": s, "end": e, "word": "..."})
+```bash
 scd-multimodal --audio /path/to/audio_or_dir --out outputs/mm \
   --transcript /path/to/*.json --transcript-format json \
   --win 1.0 --hop 0.25 --feature mfcc --alpha 0.6 \
   --peak-quantile 0.8 --min-distance 0.5 --save-rttm
-'''
----
+```
 
-## Batch evaluation examples
+##### Batch evaluation examples
 
 ```bash
 # Unsupervised over a folder
