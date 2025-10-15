@@ -100,6 +100,10 @@ scd-unsup --audio /data/AMI/WAVs --glob "*.wav" --out outputs/unsup_ami --save-r
 
 # Graph-based over a folder
 scd-graph --audio /data/AMI/WAVs --glob "*.wav" --out outputs/graph_ami --save-rttm
+
+# Multimodal over a folder
+scd-multimodal --audio /data/AMI/WAVs --glob "*.wav" --out outputs/mm_ami --save-rttm
+
 ```
 
 If dataset loaders require manifests, pass the folder with `--audio` and forward implementation-specific flags using `--extra ...`.
