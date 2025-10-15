@@ -42,6 +42,7 @@ Two console scripts are installed:
 
 - **`scd-unsup`** → wraps `unsup_scd_improved.py`
 - **`scd-graph`** → wraps `SCD-pos-Graph.py`
+- **`scd-multimodal`** → wraps scd_multimodal_cli.py (audio-only or audio+transcripts)
 
 Each CLI attempts to call an entry function named `main/run/cli/train/evaluate` inside the corresponding script. If none is found, the CLI executes the script as `__main__` and forwards the provided arguments.
 
