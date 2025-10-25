@@ -1,7 +1,7 @@
 # scd-toolkit
 
 Unified **Speaker Change Detection (SCD)** toolkit for experiments and batch runs.  
-Two approaches are packaged as an installable library with consistent CLIs:
+Three approaches are packaged as an installable library with consistent CLIs:
 
 1) **Unsupervised SCD (embedding jumps + post-processing)** — `unsup_scd_improved.py`
 2) **Graph-based SCD with positional encodings (self-learning)** — `SCD-pos-Graph.py`
